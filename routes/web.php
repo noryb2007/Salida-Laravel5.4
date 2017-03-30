@@ -16,3 +16,6 @@ Route::get('/productos/{id}','Frontend\PageController@product')->name('product')
 Auth::routes();
 
 Route::get('/home','Backend\HomeController@index');
+
+
+Route::get('/listado-productos','Backend\ProductController@index')->name('listProducts');
